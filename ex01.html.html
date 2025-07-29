@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura Studio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #ccc;
+      background-image: url('06.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      color: #b366ff;
+      padding: 40px 15px;
+      text-align: center;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .header-content img {
+      height: 60px;
+      width: 60px;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #b366ff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .slider {
+      width: 480px;
+      height: 640px;
+      margin: 20px auto;
+      overflow: hidden;
+      border: 3px solid #b366ff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+
+    .slides {
+      display: flex;
+      width: 1440px;
+      animation: slide 12s infinite ease-in-out;
+    }
+
+    .slides img {
+      width: 480px;
+      height: 640px;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0%   { transform: translateX(0); }
+      33%  { transform: translateX(-480px); }
+      66%  { transform: translateX(-960px); }
+      100% { transform: translateX(0); }
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      color: #fff;
+    }
+
+    table, th, td {
+      border: 1px solid #b366ff;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+    }
+
+    .rating {
+      color: gold;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #b366ff;
+      text-align: center;
+      padding: 15px;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <img src="icon.png" alt="Aura Icon">
+    <div>
+      <h1>AURA STUDIO</h1>
+      <p>"We freeze moments. Forever."</p>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <a href="#gallery">Gallery</a>
+  <a href="#about">About</a>
+  <a href="#photographers">Photographers</a>
+  <a href="#contact">Contact</a>
+  <a href="#rating">Rate Us</a>
+  <a href="#form">Booking Form</a>
+  <a href="#media">Media</a>
+</nav>
+
+<section id="gallery">
+  <h2>Our Best Shots</h2>
+  <div class="slider">
+    <div class="slides">
+      <img src="01.jpg" alt="Image 1" />
+      <img src="02.jpg" alt="Image 2" />
+      <img src="03.jpg" alt="Image 3" />
+    </div>
+  </div>
+  <p>Explore the beauty of <span style="color:#b366ff;">one frame at a time</span>!</p>
+</section>
+
+<section id="about">
+  <h2>About This Site</h2>
+  <p>1. SEARCH</p>
+  <p><span style="color:#b366ff;">Search for your perfect Photographer based on your location, category and price range.</span></p>
+  <p>2. SHORTLIST</p>
+  <p><span style="color:#b366ff;">Shortlist Photographers you like based on their albums, packages and reviews to keep track.</span></p>
+  <p>3. BOOK</p>
+  <p><span style="color:#b366ff;">Book your finalized Photographer by selecting a package or directly contacting them on WhatsApp.</span></p>
+</section>
+
+<section id="photographers">
+  <h2>Featured Wedding Photographers</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Contact No</th>
+      <th>Rating</th>
+    </tr>
+    <tr>
+      <td>Arya</td>
+      <td>9456332517</td>
+      <td class="rating">★★★★★</td>
+    </tr>
+    <tr>
+      <td>Ravi</td>
+      <td>7514300479</td>
+      <td class="rating">★★★★☆</td>
+    </tr>
+    <tr>
+      <td>Lisa</td>
+      <td>9680054120</td>
+      <td class="rating">★★★★★</td>
+    </tr>
+  </table>
+</section>
+
+<section id="photographers">
+  <h2>Featured Babies and Kids Photographers</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Contact No</th>
+      <th>Rating</th>
+    </tr>
+    <tr>
+      <td>Harini</td>
+      <td>8901267881</td>
+      <td class="rating">★★★★★</td>
+    </tr>
+    <tr>
+      <td>Liya</td>
+      <td>4251690075</td>
+      <td class="rating">★★★★☆</td>
+    </tr>
+    <tr>
+      <td>Vinoth</td>
+      <td>9005602134</td>
+      <td class="rating">★★★★★</td>
+    </tr>
+  </table>
+</section>
+
+<section id="contact">
+  <h2>📞 Contact Us</h2>
+  <p>Reach out to us for collaboration or feedback.</p>
+  <h3>Connect via:</h3>
+  <ul>
+    <li><a href="mailto:Aura@showcase.com">Email - Aura@showcase.com</a></li>
+    <li><a href="tel:+911234567890">Phone - +911234567890</a></li>
+  </ul>
+
+  <h3>Our Services:</h3>
+  <ol>
+    <li>Wedding Photography</li>
+    <li>Nature Documentaries</li>
+    <li>Portrait Shoots</li>
+  </ol>
+
+  <p><a href="#gallery">Back to Gallery ↑</a></p>
+</section>
+
+<section id="rating">
+  <h2>⭐ Rate Us</h2>
+  <p>If you loved our gallery, give us a star!</p>
+  <p class="rating">★★★★★</p>
+</section>
+
+<section id="form">
+  <h2>📋 Booking Form</h2>
+  <form action="/action_page.php" method="get">
+    <fieldset>
+      <legend>Your Details</legend>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="date">Event Date:</label>
+      <input type="date" id="date" name="date"><br><br>
+
+      <label>Type of Photography:</label><br>
+      <input type="radio" name="type" value="wedding"> Wedding
+      <input type="radio" name="type" value="baby"> Baby & Kids
+      <input type="radio" name="type" value="nature"> Nature<br><br>
+
+      <label for="package">Choose Package:</label>
+      <select id="package" name="package">
+        <option value="silver">Silver</option>
+        <option value="gold">Gold</option>
+        <option value="platinum">Platinum</option>
+      </select><br><br>
+
+      <label for="file">Upload Reference Photo (optional):</label>
+      <input type="file" id="file" name="file"><br><br>
+
+      <label for="comments">Special Requests:</label><br>
+      <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+      <input type="submit" value="Book Now">
+      <input type="reset" value="Reset Form">
+    </fieldset>
+  </form>
+</section>
+
+<section id="media">
+  <h2>🎵🎬 Media Showcase</h2>
+
+  <h3>Studio Theme Music</h3>
+  <audio controls autoplay loop>
+    <source src="Music.mp3.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <h3>Our Video Trailer</h3>
+  <video width="960" height="540" controls>
+    <source src="videoplayback.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <h3>Embedded Slideshow (SWF)</h3>
+  <embed src="1.swf" width="300" height="200">
+
+  <h3>Our Location (Google Maps)</h3>
+  <iframe width="300" height="200" src="https://maps.google.com/maps?q=chennai&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
+</section>
+
+<footer>
+  <p>&copy; 2019 BookMyShoot Technologies Pvt. Ltd. All rights reserved. | Theme: Black & Purple</p>
+  <p>Terms Of Service | Privacy Policy</p>
+</footer>
+
+</body>
+</html>
+
